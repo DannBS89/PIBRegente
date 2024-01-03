@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player">
+        <button id="playButton" class="play-button" onclick="playStream('https://playerservices.streamtheworld.com/api/livestream-redirect/RADIOTRANSMUNDIALAAC_SC?1697069554500')"></button>
+        <div class="progress-bar"></div>
+    </div>
+
+    <audio id="audioPlayer" preload="metadata">
+        <!-- Aqui você pode colocar um fallback para navegadores que não suportam áudio -->
+        <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/RADIOTRANSMUNDIALAAC_SC?1697069554500">
+    </audio>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
